@@ -1,0 +1,32 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Question Checker</title>
+</head>
+<body>
+    <h1>Ask a Tax-Related Question</h1>
+    <form action="/ask" method="post">
+        <textarea name="question" required></textarea><br>
+        <input type="submit" value="Ask">
+    </form>
+    <div id="response"></div>
+
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch('/ask', {
+                method: 'POST',
+                body: formData
+            });
+            const result = await response.json();
+            document.getElementById('response').textContent = result.response;
+        });
+    </script>
+</body>
+</html>
