@@ -64,8 +64,8 @@ Prerequisites:
 - Git (for cloning the repository)
 
 Step 1: Clone the Repository
-First, clone the repository to your local machine:
-git clone https://github.com/AtharvaJadhav/systems-hackathon.git
+First, clone the repository to your local machine:     
+git clone https://github.com/AtharvaJadhav/systems-hackathon.git     
 cd systems-hackathon
 
 Step 2: Set Up Environment Variables
@@ -74,18 +74,18 @@ OPENAI_API_KEY=your_openai_api_key_here
 Replace your_openai_api_key_here with your actual OpenAI API key.
 
 Step 3: Install Dependencies
-Install the required Python packages:
+Install the required Python packages:    
 pip install -r requirements.txt
 
 Step 4: Docker Compose Setup
-Use Docker Compose to set up and start the Redis service:
-docker-compose up -d
-This command will download the necessary Docker images and start the Redis service in the background.
+Use Docker Compose to set up and start the Redis service:    
+docker-compose up -d     
+This command will download the necessary Docker images and start the Redis service in the background.    
 
 Step 5: Start the Flask Application
 Run the Flask application:
-python app.py
-This will start the Flask server, typically accessible at http://localhost:5000.
+python app.py     
+This will start the Flask server, typically accessible at http://localhost:5000.     
 
 Step 6: Access the Application
 Open your web browser and navigate to http://localhost:5000 to access the Macroeconomic Researcher Time Series Dashboard.
