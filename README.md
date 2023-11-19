@@ -46,6 +46,7 @@ Our submission for CMPE 273 Hackathon challenges participants to develop a solut
 
 ## Screenshots
 (Here, screenshots of the application in use will be provided to give a visual understanding of the interface and functionality.)
+![WhatsApp Image 2023-11-19 at 14 19 18](https://github.com/AtharvaJadhav/systems-hackathon/assets/55223872/35acce40-cf34-4ed1-9517-ff5936a1b37e)
 
 ### Architectural Diagram
 (An architectural diagram of the system will be included here to illustrate the structure and flow of the application.)
