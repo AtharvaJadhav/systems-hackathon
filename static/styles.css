@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    background-color: #ffffff;
+    width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.tax-prompt {
+    padding: 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.tax-prompt textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    margin: auto;
+}
+
+.chat-actions {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.send-btn {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.cancel-btn {
+    background-color: #cc0000;
+    color: #ffffff;
+}
+
+.response-section {
+    padding: 20px;
+}
+
+.user-message {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    align-self: flex-end;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.bot-message {
+    padding: 10px;
+    margin: 5px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    align-self: flex-start;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+

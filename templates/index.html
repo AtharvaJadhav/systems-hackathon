@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deloitte Auditor Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>Deloitte Auditor Enterprise Chat Assistant</h1>
+        </header>
+        <section class="tax-prompt">
+            <textarea id="tax-prompt-input"></textarea>
+        </section>
+        <section class="chat-actions">
+            <button onclick="sendQuestion()"  class="send-btn">Send</button>
+            <button onclick="cancelQuestion()" class="cancel-btn">Cancel</button>
+        </section>
+        <!-- <section class="response-section">
+            <div id="response"></div>
+        </section> -->
+        <div id="chat-history"></div>
+
+    </div>
+
+    <script>
+       function sendQuestion() {
+            const userMessage = document.getElementById('tax-prompt-input').value;
+
+            // Display user's message in chat history
+            const userMessageDiv = document.createElement('div');
+            userMessageDiv.className = 'user-message';
+            userMessageDiv.innerHTML = "<strong>You:</strong> " + userMessage; // Prepend "You:"
+            document.getElementById('chat-history').appendChild(userMessageDiv);
+
+            fetch('/ask', {
+                method: 'POST',
+                body: new URLSearchParams({ 'user_message': userMessage }),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const botMessageDiv = document.createElement('div');
+                botMessageDiv.className = 'bot-message';
+                botMessageDiv.innerHTML = "<strong>Financial Assistant:</strong> " + data.response; // Prepend "Tax Assistant:"
+                document.getElementById('chat-history').appendChild(botMessageDiv);
+
+                document.getElementById('tax-prompt-input').value = ''; // Clear the textarea
+            });
+        }
+
+
+        function cancelQuestion() {
+            document.getElementById('tax-prompt-input').value = '';
+            document.getElementById('chat-history').innerText = '';
+        }
+    </script>
+</body>
+</html>
