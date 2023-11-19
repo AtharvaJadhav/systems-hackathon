@@ -56,7 +56,47 @@ Our submission for CMPE 273 Hackathon challenges participants to develop a solut
 
 ## Getting Started
 
-(Instructions on how to install, configure, and use the application will be provided in this section.)
+Installation and Configuration Instructions for the Systems-Hackathon Repository
+
+Prerequisites:
+- Python 3.8 or higher
+- Docker and Docker Compose
+- Git (for cloning the repository)
+
+Step 1: Clone the Repository
+First, clone the repository to your local machine:
+git clone https://github.com/AtharvaJadhav/systems-hackathon.git
+cd systems-hackathon
+
+Step 2: Set Up Environment Variables
+Create a .env file in the root directory of the project and add your OpenAI API key:
+OPENAI_API_KEY=your_openai_api_key_here
+Replace your_openai_api_key_here with your actual OpenAI API key.
+
+Step 3: Install Dependencies
+Install the required Python packages:
+pip install -r requirements.txt
+
+Step 4: Docker Compose Setup
+Use Docker Compose to set up and start the Redis service:
+docker-compose up -d
+This command will download the necessary Docker images and start the Redis service in the background.
+
+Step 5: Start the Flask Application
+Run the Flask application:
+python app.py
+This will start the Flask server, typically accessible at http://localhost:5000.
+
+Step 6: Access the Application
+Open your web browser and navigate to http://localhost:5000 to access the Macroeconomic Researcher Time Series Dashboard.
+
+Additional Configuration (Optional):
+- If you need to customize the Redis configuration, you can modify the docker-compose.yml file.
+- For production deployment, consider using a WSGI server like Gunicorn and running the Flask app in a more secure and scalable manner.
+
+Troubleshooting:
+- If you encounter any issues with the Docker setup, ensure Docker is running correctly on your system and you have the necessary permissions.
+- For issues related to Python dependencies, ensure you are using the correct version of Python and have all the required packages installed.
 
 ---
 
