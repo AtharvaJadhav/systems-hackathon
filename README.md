@@ -61,7 +61,7 @@ Our submission for CMPE 273 Hackathon challenges participants to develop a solut
 ## Team
 
 - Omkar Nagarkar
-- Sangram Jagdale
+- Sangram Jagtap
 - Purvil Patel
 - Atharva Jadhav
 
