@@ -47,6 +47,8 @@ Our submission for CMPE 273 Hackathon challenges participants to develop a solut
 ## Screenshots
 ![WhatsApp Image 2023-11-19 at 14 19 18](https://github.com/AtharvaJadhav/systems-hackathon/assets/55223872/35acce40-cf34-4ed1-9517-ff5936a1b37e)
 
+![WhatsApp Image 2023-11-19 at 14 38 59](https://github.com/AtharvaJadhav/systems-hackathon/assets/55223872/f5293e2f-e53a-4f77-b1d0-8d4ca1fb982b)
+
 ### Architectural Diagram
 <img width="1103" alt="Screen Shot 2023-11-18 at 3 34 57 PM" src="https://github.com/AtharvaJadhav/systems-hackathon/assets/55223872/bd34cae3-ee70-4cdd-a440-dfbc30f6207b">
 
