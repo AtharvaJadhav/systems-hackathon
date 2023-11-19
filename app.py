@@ -43,10 +43,10 @@ def index():
 @app.route('/ask', methods=['POST'])
 def ask():
     user_message = request.form['user_message']
-    #user_id = request.form['user_id']  # Assuming user_id is passed from the client
+    user_id = 1  # Assuming user_id is passed from the client
 
     # Get or initialize chat history for the user
-    #chat_history = chat_histories.get(user_id, [])
+    chat_history = chat_histories.get(user_id, [])
     chat_history = []
 
     # Process the query using the conversational chain
@@ -54,8 +54,8 @@ def ask():
     response = result['answer']
 
     # Update chat history
-    #chat_history.append((user_message, response))
-    #chat_histories[user_id] = chat_history
+    chat_history.append((user_message, response))
+    chat_histories[user_id] = chat_history
 
     return jsonify({'response': response})
 

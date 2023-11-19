@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deloitte Auditor Chat</title>
+    <title>Finance Chat</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="chat-container">
         <header>
-            <h1>Deloitte Auditor Enterprise Chat Assistant</h1>
+            <h1>Macroeconomic Researcher Chat Bot</h1>
         </header>
         <section class="tax-prompt">
             <textarea id="tax-prompt-input"></textarea>
@@ -32,7 +32,7 @@
             // Display user's message in chat history
             const userMessageDiv = document.createElement('div');
             userMessageDiv.className = 'user-message';
-            userMessageDiv.innerHTML = "<strong>You:</strong> " + userMessage; // Prepend "You:"
+            userMessageDiv.innerHTML = "<strong>You:</strong> " + userMessage;
             document.getElementById('chat-history').appendChild(userMessageDiv);
 
             fetch('/ask', {
@@ -46,10 +46,10 @@
             .then(data => {
                 const botMessageDiv = document.createElement('div');
                 botMessageDiv.className = 'bot-message';
-                botMessageDiv.innerHTML = "<strong>Financial Assistant:</strong> " + data.response; // Prepend "Tax Assistant:"
+                botMessageDiv.innerHTML = "<strong>Researcher Assistant:</strong> " + data.response; 
                 document.getElementById('chat-history').appendChild(botMessageDiv);
 
-                document.getElementById('tax-prompt-input').value = ''; // Clear the textarea
+                document.getElementById('tax-prompt-input').value = ''; 
             });
         }
 
