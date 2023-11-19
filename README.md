@@ -1,22 +1,72 @@
-# CMPE-273--Assignment-OpenAI-Chat-Application
+# CMPE 273 Hackathon: Macroeconomic Researcher Time Series Dashboard
 
 ## Overview
-This repository contains a chatbot application that integrates with OpenAI's GPT-3.5 Turbo model to provide tax-related assistance. Built using the Flask framework, the application serves as a web-based chat interface where users can interact and get responses from the OpenAI model.
 
-## Steps for Setup (Installation)
-1. Clone the repository:
-  ```git clone https://github.com/omkarnagarkar55/CMPE-273--Assignment-OpenAI-Chat-Application.git```
-2. Navigate to the repository directory:
-  ```cd CMPE-273--Assignment-OpenAI-Chat-Application```
-3. Install the required Python packages:
-   ```pip install -r requirements.txt```
+Our submission for CMPE 273 Hackathon challenges participants to develop a solution that addresses UN Sustainable Development Goal #1 - No Poverty. The focus of this hackathon is to create a Macroeconomic Researcher Time Series Dashboard, leveraging a variety of economic indicators and data sources provided in the `CMPE273_DataSources_20231111_Hackathon.zip`.
 
-## Steps for Execution
-1. Set your OpenAI API key as an environment variable or directly in the `app.py` file.
-2. Run the Flask application:
-  ```python app.py```
-3. Open a web browser and navigate to `http://127.0.0.1:5000/` to access the chat interface.
+## Features
+
+### Enterprise Distributed Architecture
+- **Prompt Management:** Capable of receiving and storing prompts from numerous users.
+- **Response Storage:** Efficiently stores responses for later retrieval and analysis.
+- **Network and Local Mode:** Operates in both network-connected and local environments.
+- **REST Deployment:** Utilizes RESTful APIs for seamless integration and communication.
+
+### Natural Language Interaction with Data
+- **User-Friendly Interface:** Allows users to interact with the dashboard using natural language, making data access and analysis more intuitive.
+
+### Budget Speeches Integration
+- **Real-Time Analysis:** Enables real-time analysis of budget speeches, providing valuable insights for economic researchers and government representatives.
+
+## Data Tables
+
+### Macroeconomic Table
+- Indicators like GDP Growth Rate, Current Account Balance, and various forms of Foreign Direct Investment.
+
+### Agricultural Table
+- Covers indicators such as Agricultural Contribution to GDP, Manufacturing, Fertilizer Consumption, etc.
+
+### Debt Table
+- Includes Total Reserves, Debt Service, GNI, and more.
+
+### Food Security (Imports)
+- Data on agricultural imports like wheat and rice for countries like Saudi Arabia and Egypt.
+
+## Personas
+
+### ECON Researcher
+- Utilizes the dashboard for in-depth economic research and analysis.
+
+### Government Representative
+- Leverages the tool for policy making, economic planning, and international trade insights.
+
+## Redis
+- Implemented for enhanced performance and scalability.
+
 
 ## Screenshots
-![Chat Assistant UI](https://github.com/omkarnagarkar55/CMPE-273--Assignment-OpenAI-Chat-Application/assets/60735358/49134567-8f7a-4706-9565-e1cfba285fd6)
+(Here, screenshots of the application in use will be provided to give a visual understanding of the interface and functionality.)
 
+### Architectural Diagram
+(An architectural diagram of the system will be included here to illustrate the structure and flow of the application.)
+
+---
+
+## Getting Started
+
+(Instructions on how to install, configure, and use the application will be provided in this section.)
+
+---
+
+## Team
+
+- Omkar Nagarkar
+- Sangram Jagtap
+- Purvil Patel
+- Atharva Jadhav
+
+---
+
+## License
+
+This project is licensed under the MIT License.
